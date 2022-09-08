@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    </link>
+</head>
+<!-- Corps de l'html -->
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/ca.jpg" alt="CA Blog" width="65px" height="65px" />
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li>
+                        <a href="./index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./Language.html">Compétences</a>
+                    </li>
+                    <li>
+                        <a href="./motivations.html">Curriculum Vitae</a>
+                    </li>
+                    <li>
+                        <a href="./recherche.html">Expérience</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home3">
+        <h1><br><br><br><br>Voici mon Curriculum vitae,<br>et ma lettre de motivation</h1>
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+        <h2 class="myH2"><img src=" ./assets/images/Cv2.png "><br><a href="./CV_Derouard_Dylan.pdf" Télécharger>
+                Télécharger mon CV </a></h2>
+        <!-- <p class="myH2"><img src=" ./assets/images/lettre.png "><br><a href="./Lettre de motivation.pdf" Télécharger>
+                Télécharger ma lettre de motivation </a></h2> -->
+    </div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+
+</html>

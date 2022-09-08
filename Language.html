@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    </link>
+</head>
+<!-- Corps de l'html -->
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/ca.jpg" alt="CA Blog" width="65px" height="65px" />
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li>
+                        <a href="./index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./Language.html">Compétences</a>
+                    </li>
+                    <li>
+                        <a href="./motivations.html">Curriculum Vitae</a>
+                    </li>
+                    <li>
+                        <a href="./recherche.html">Expérience</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home2">
+        <h1><br><br><br><br>Présentation de toute les compétences apprise</h1>
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+
+        <p class="myP">Travail en équipe : De part mes activités passées, j’ai pu effectuer de nombreux travaux en
+            équipe que ce soit tant sur
+            le plan professionnel avec la carrière que j’ai pu effectuer au sein de la Gendarmerie tant que sur le plan
+            éducatif
+            avec la réalisation de travaux en groupe. Ainsi, les différentes expériences que j’ai pu accumuler m’ont
+            permises de
+            savoir comment travailler en collaboration et de tirer le meilleur de chacun afin d’arriver à un résultat
+            adéquat.</p>
+        <p class="myP">Réactivité : Ayant été amené à gérer des problèmes ou faire face à des situations rapidement m’a
+            permis d’acquérir une
+            réelle réactivité. Ce soft skill me permet ainsi de garder une constance dans mon travail et de pouvoir
+            toujours
+            m’adapter aux différentes situations auxquelles je suis confronté.</p>
+        <p class="myP">Communication : Cette compétence allant de pair avec le travail en équipe, j’ai pu développer de
+            bonnes méthodes de
+            communication afin de parvenir à résoudre des problèmes et de pouvoir comprendre et se faire comprendre de
+            mes
+            différents collaborateurs.</p>
+        <p class="myP">Curiosité : Travaillant dans le milieu de l’informatique, la curiosité est pour moi un soft skill
+            primordial car c’est
+            un domaine dans lequel je suis passionné et où il y a toujours des choses à apprendre. Ainsi, ma curiosité
+            et mon envie
+            d’apprendre me permettent de me perfectionner au quotidien dans ce domaine que j’affectionne.</p>
+        <p class="myP">Rigueur : A l’aide des différentes expériences professionnelles que j’ai pu entreprendre, la
+            rigueur était de mise. J’ai
+            alors pu acquérir une qualité dans mon travail qui me permet d’assurer le bon résultat des différentes
+            missions qui me
+            sont demandées tout en respectant les délais qui me sont impartis et les bonnes méthodes d’exécution.</p>
+        <p class="myP">Investissement : Selon moi, être investi dans un projet que l’on entreprend est primordial pour
+            arriver à un bon
+            résultat. J’ai toujours été très investi dans tout ce que j’ai pu entreprendre dans ma vie ce qui m’a permis
+            d’en
+            arriver là où j’en suis aujourd’hui.</p>
+        <!-- <p class="myP">JavaScript</p>
+        <p class="myP">Angular</p>
+        <p class="myP">Linux</p>
+        <p class="myP">CiscoPacketTracer</p>
+        <p class="myP">UI/UX</p>
+        <p class="myP">VMWare</p>
+
+        <h2 class="myH2">Languages appris en Bachelor 2</h2>
+        <p class="myP">Java</p>
+        <p class="myP">Node</p>
+        <p class="myP">NodeJS</p>
+        <p class="myP">Kotlin</p>
+        <p class="myP">Gestion de base de donnée</p>
+        <p class="myP">Pycharm</p> -->
+    </div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+
+</html>
